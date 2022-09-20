@@ -25,7 +25,6 @@ const Header = function (props: Props) {
           url="https://github.com/IndependenceNguyen"
           bgColor="transparent"
           fgColor="gray"
-
         />
         <SocialIcon
           url="https://www.facebook.com/nguyenkhanh17112003"
@@ -55,6 +54,12 @@ const Header = function (props: Props) {
         <SocialIcon
           className="cursor-pointer"
           network="email"
+          bgColor="transparent"
+          fgColor="gray"
+        />
+        <SocialIcon
+          className="cursor-pointer"
+          network="twittere"
           bgColor="transparent"
           fgColor="gray"
         />

@@ -35,18 +35,21 @@ const Hero = function ({}: Props) {
         <span className="mr-3">{text}</span>
         <Cursor cursorColor="#F7AB0A" />
       </h1>
-      <div className="mt-5 flex relative -top-[200px] transition-shadow cursor-pointer">
+      <div className="mt-5 flex relative -top-[200px] transition-shadow cursor-pointer z-100">
         <Link href="#about">
           <div className="heroButton ">ABOUT</div>
         </Link>
-        <Link href="#Exprience">
+        <Link href="#experience">
           <div className="heroButton ">EXPERIENCE</div>
         </Link>
-        <Link href="#Skill">
+        <Link href="#skill">
           <div className="heroButton">SKILL</div>
         </Link>
-        <Link href="#Project">
+        <Link href="#project">
           <div className="heroButton ">PROJECT</div>
+        </Link>
+        <Link href="#contact">
+          <div className="heroButton ">CONTACT</div>
         </Link>
       </div>
     </div>
