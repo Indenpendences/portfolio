@@ -7,9 +7,11 @@ import Experience from "../layouts/Experience";
 import Skill from "../layouts/Skill";
 import Project from "../layouts/Project";
 import Contact from "../layouts/Contact";
-const Home: NextPage = () => {
+import Link from "next/link";
+
+const Home: NextPage = function () {
   return (
-    <div className="bg-[rgb(36,36,36)] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 ">
+    <div className="bg-[#15202b] text-white h-screen snap-y snap-mandatory overflow-scroll overflow-x-hidden z-0 scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 ">
       <Meta title="Khanh's Portfolio" />
       <Header />
       <section id="hero" className="snap-start">
@@ -21,15 +23,26 @@ const Home: NextPage = () => {
       <section id="experience" className="snap-center">
         <Experience />
       </section>
-      <section id="skill" className="snap-center">
+      <section id="skill" className="snap-start">
         <Skill />
       </section>
-      <section id="project" className="snap-center">
+      <section id="project" className="snap-start">
         <Project />
       </section>
-      <section id="contact" className="snap-center">
+      <section id="contact" className="snap-start">
         <Contact />
       </section>
+      <Link href="#hero">
+        <footer className="sticky bottom-5 w-full cursor-pointer">
+          <div className="flex items-center justify-center">
+            <img
+              className="h-10 w-10 rounded-full filter grayscale hover:grayscale-0 cursor-pointer"
+              src="https://avatars.githubusercontent.com/u/108068667?v=4"
+              alt=""
+            />
+          </div>
+        </footer>
+      </Link>
     </div>
   );
 };

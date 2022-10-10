@@ -52,7 +52,7 @@ const Header = function (props: Props) {
         className="flex flex-row items-center text-gray-300 cursor-pointerS"
       >
         <SocialIcon
-          className="cursor-pointer"
+          className="cursor-pointer hover:text-[#F7AB0A]"
           network="email"
           bgColor="transparent"
           fgColor="gray"

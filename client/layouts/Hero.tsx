@@ -12,7 +12,7 @@ const Hero = function ({}: Props) {
     words: [
       "Hi, The Name is Nguyễn Khánh !",
       "<HelloWorld !!!/>",
-      "I love You ! ^.^",
+      "I love Hoa ! ^.^",
     ],
     loop: true,
     delaySpeed: 2000,
